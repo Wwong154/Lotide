@@ -9,7 +9,7 @@ const without = function(input, remove) {
         break;
       }
     }
-    if(notToRemove) {
+    if (notToRemove) {
       result.push(x);
     }
   }

@@ -23,7 +23,7 @@ const letterPositions = function(input) {
   for (let index in input) {  // loop with index
     if (result[`${input[index]}`]) { // if key is avaliable , log index
       result[`${input[index]}`].push(Number(index));
-    } else if (input[index] === ' '){ // if character is space, ingore
+    } else if (input[index] === ' ') { // if character is space, ingore
     } else { // log key that is not in result yet
       result[`${input[index]}`] = [Number(index)];
     }
@@ -33,5 +33,7 @@ const letterPositions = function(input) {
 
 
 //test
+/*
 assertArraysEqual(letterPositions("lighthouse in the house").i, [1, 11]);
 assertArraysEqual(letterPositions("hello").z, undefined);
+*/

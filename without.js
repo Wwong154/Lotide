@@ -16,15 +16,21 @@ const without = function(input, remove) {
   return result;
 };
 const assertArraysEqual = function(actual, expected) {
-  if (actual.length !== expected.length) {
+  if (eqArrays(actual, expected) === false) {
     return console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
+  return console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+};
+const eqArrays = function(actual, expected) {
+  if (actual.length !== expected.length) {
+    return false;
   }
   for (let x in actual) {
     if (actual[x] !== expected[x]) {
-      return console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+      return false;
     }
   }
-  return console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
+  return true;
 };
 // test case
 /*

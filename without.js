@@ -16,6 +16,9 @@ const without = function(input, remove) {
   return result;
 };
 const assertArraysEqual = function(actual, expected) {
+  if (expected === undefined) {
+    return actual === expected ? console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`) : console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
+  }
   if (eqArrays(actual, expected) === false) {
     return console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
   }

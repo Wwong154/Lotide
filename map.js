@@ -31,7 +31,7 @@ const map = function(array, callback) {
 const words = ["ground", "control", "to", "major", "tom"];
 const numbers = [1,2,4,8,16,32];
 const even = [1,4,6,78,1032,55,93];
-const results1 = map(words, word => word[0]);
-assertArraysEqual(results1, ['g','c','t','m','t']);
+const results1 = map(words, word => word[2]);
+assertArraysEqual(results1, ['o','n','','j','m']);
 assertArraysEqual(map(numbers, x => x * 2), [2,4,8,16,32,64]);
 assertArraysEqual(map(even, x => x % 2 === 0), [false, true, true, true, true, false, false]);

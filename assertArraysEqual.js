@@ -10,3 +10,4 @@ const assertArraysEqual = function(actual, expected) {
 };
 
 module.exports = assertArraysEqual;
+assertArraysEqual([1,3],[1,'3'])

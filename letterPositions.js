@@ -1,23 +1,3 @@
-const assertArraysEqual = function(actual, expected) {
-  if (expected === undefined) {
-    return actual === expected ? console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`) : console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-  if (eqArrays(actual, expected) === false) {
-    return console.log(`🛑🛑🛑 Assertion Failed: ${actual} !== ${expected}`);
-  }
-  return console.log(`✅✅✅ Assertion Passed: ${actual} === ${expected}`);
-};
-const eqArrays = function(actual, expected) {
-  if (actual.length !== expected.length) {
-    return false;
-  }
-  for (let x in actual) {
-    if (actual[x] !== expected[x]) {
-      return false;
-    }
-  }
-  return true;
-};
 const letterPositions = function(input) {
   let result = {};
   for (let index in input) {  // loop with index
@@ -30,10 +10,4 @@ const letterPositions = function(input) {
   }
   return result;
 };
-
-
-//test
-/*
-assertArraysEqual(letterPositions("lighthouse in the house").i, [1, 11]);
-assertArraysEqual(letterPositions("hello").z, undefined);
-*/
+module.exports = letterPositions;

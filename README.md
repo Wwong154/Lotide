@@ -35,6 +35,7 @@ The following functions are currently implemented:
 * `eqObject(actual, expected)`: input 2 Objects, will return boolean if they are equal or not.
 * `findKey(object, callBack)`: input a list(object) and a callBack fn as criteria of the key that is being look for. return the key in String. 
 * `findKeyByValue(object, Value)`: input a list(object) and the value that is being look for. return the key in String, return undefined if no paired key is found
+* `flatten(array))`: input a nested array, return a flatten array.
 * `head(array)`: return the content from the first index of the array, undefined if array is empty
 * `letterPositions(String)`: Input a string, return a Object which log the index of each character appearance as an Object.{cha1: [index1, index2...], cha2...}
 * `map(array, callBack)`: input a Array, and a callBack fn. return will be a array modified based on your callBack fn.

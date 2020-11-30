@@ -1,7 +1,7 @@
 {
-  "name": "lotide",
+  "name": "@feaovali/lotide",
   "version": "1.0.0",
-  "description": "",
+  "description": "Lighthouse Lab Assignment (for learning purposes)",
   "main": "assertArraysEqual.js",
   "directories": {
     "test": "test"
@@ -14,7 +14,8 @@
     "url": "git+https://github.com/Wwong154/Lotide.git"
   },
   "keywords": [],
-  "author": "",
+  "author": "Wilkie Wong",
+  "email": "feanor4d@gmail.com",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Wwong154/Lotide/issues"
